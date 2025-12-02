@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center gap-2">
             <a href="#home" className="block">
                 <img 
-                    src="https://kawyqqnvckjfdchlteue.supabase.co/storage/v1/object/sign/resumes/Untitled%20(500%20x%20200%20px)%20(2).png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80ZWMwZGE5Ni1hYTZhLTQwZWMtYjgwNC05MjJmM2MzODJkZWYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJyZXN1bWVzL1VudGl0bGVkICg1MDAgeCAyMDAgcHgpICgyKS5wbmciLCJpYXQiOjE3NjQ2ODE2NDcsImV4cCI6MTc5NjIxNzY0N30.tiXTyfVD9NOYXcFh7T4XT1vbHlyJsA8djCTU9_sD1UQ" 
+                    src="https://kawyqqnvckjfdchlteue.supabase.co/storage/v1/object/sign/resumes/Untitled%20design.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80ZWMwZGE5Ni1hYTZhLTQwZWMtYjgwNC05MjJmM2MzODJkZWYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJyZXN1bWVzL1VudGl0bGVkIGRlc2lnbi5wbmciLCJpYXQiOjE3NjQ3MDU0MzksImV4cCI6MTc5NjI0MTQzOX0.kDkzdst7KmRY9N-mIsJM1FnfBX544rIL5PDys2qnyvw" 
                     alt="Trevi Rental Logo" 
                     className="h-14 w-auto object-contain"
                     // @ts-ignore - Fetch priority is a valid standard attribute but React types might lag
