@@ -84,7 +84,7 @@ export const REVIEWS: Review[] = [
     id: '2',
     name: 'Sarah Mitchell',
     rating: 5,
-    text: 'Service absolument fantastique. La voiture a été livrée à mon hôtel à Marrakech à l\'heure et était impeccable.',
+    text: 'Service fantastique. La voiture a été livrée à mon hôtel à l\'heure et était impeccable. Simple et efficace.',
     language: 'fr',
     date: '2023-11-02'
   },
@@ -100,7 +100,7 @@ export const REVIEWS: Review[] = [
     id: '4',
     name: 'James Wilson',
     rating: 5,
-    text: 'Finally a rental agency where "new car" actually means new. Rented a Duster for a week, smooth drive and the AC worked perfectly (crucial in July!). The drop-off at the airport was super quick.',
+    text: 'Finally a rental agency where "new car" actually means new. The Duster ran perfectly and the AC was a lifesaver. Quick drop-off at the airport!',
     language: 'en',
     date: '2024-01-15'
   },
@@ -108,7 +108,7 @@ export const REVIEWS: Review[] = [
     id: '5',
     name: 'Amine Kabbaj',
     rating: 5,
-    text: 'Client fidèle depuis 6 mois. C\'est rare de trouver ce niveau de sérieux à Casablanca. Les voitures sont toujours nickels et les prix restent fixes, même en haute saison. Bravo les gars.',
+    text: 'Client fidèle depuis 6 mois. C\'est rare de trouver ce sérieux à Casa. Voitures nickels et prix fixes, même en haute saison. Bravo !',
     language: 'fr',
     date: '2024-02-20'
   },
@@ -116,7 +116,7 @@ export const REVIEWS: Review[] = [
     id: '6',
     name: 'Sophie Dubois',
     rating: 4,
-    text: 'Très bon rapport qualité-prix. J\'avais un peu peur au début mais tout s\'est bien passé. La caution a été rendue immédiatement après le retour du véhicule. Je recommande pour le sérieux.',
+    text: 'Très bon rapport qualité-prix. J\'avais un peu peur au début mais la caution a été rendue immédiatement après le retour. Sérieux.',
     language: 'fr',
     date: '2024-03-05'
   }
