@@ -28,7 +28,12 @@ const Navbar: React.FC = () => {
                 <img 
                     src="https://kawyqqnvckjfdchlteue.supabase.co/storage/v1/object/sign/resumes/Untitled%20design.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80ZWMwZGE5Ni1hYTZhLTQwZWMtYjgwNC05MjJmM2MzODJkZWYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJyZXN1bWVzL1VudGl0bGVkIGRlc2lnbi5wbmciLCJpYXQiOjE3NjQ3MDU0MzksImV4cCI6MTc5NjI0MTQzOX0.kDkzdst7KmRY9N-mIsJM1FnfBX544rIL5PDys2qnyvw" 
                     alt="Trevi Rental Logo" 
-                    className="h-14 w-auto object-contain"
+                    className="h-14 w-auto object-contain transition-all duration-300"
+                    style={{
+                      filter: isScrolled 
+                        ? 'brightness(0) saturate(100%) invert(41%) sepia(87%) saturate(1637%) hue-rotate(24deg) brightness(94%) contrast(92%)' 
+                        : 'none'
+                    }}
                     // @ts-ignore - Fetch priority is a valid standard attribute but React types might lag
                     fetchPriority="high"
                     loading="eager"
