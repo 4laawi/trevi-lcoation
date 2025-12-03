@@ -1,6 +1,5 @@
 import React from 'react';
 import { Facebook, Instagram, Phone, Mail, MapPin } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -10,11 +9,9 @@ const Footer: React.FC = () => {
           
           {/* Brand */}
           <div className="text-center md:text-left">
-            <Link to="/dashboard" className="inline-block hover:opacity-80 transition-opacity">
-              <div className="text-2xl font-serif font-bold tracking-wider text-white mb-4 md:mb-6">
-                TREVI <span className="text-gold-500">RENTAL</span>
-              </div>
-            </Link>
+            <div className="text-2xl font-serif font-bold tracking-wider text-white mb-4 md:mb-6">
+              TREVI <span className="text-gold-500">RENTAL</span>
+            </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               Services de location de voitures modernes partout au Maroc. 
               Fiable, abordable et confortable. Votre voyage commence avec nous.
