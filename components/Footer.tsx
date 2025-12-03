@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Phone, Mail, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Phone, Mail, MapPin, Lock } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -89,8 +89,11 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-8 text-center text-xs text-gray-500">
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
           <p>&copy; {new Date().getFullYear()} Trevi Car Rental Maroc. Tous droits réservés.</p>
+          <a href="#admin" className="opacity-30 hover:opacity-100 transition-opacity flex items-center gap-1">
+            <Lock size={12} /> Admin
+          </a>
         </div>
       </div>
     </footer>

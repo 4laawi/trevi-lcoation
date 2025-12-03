@@ -7,6 +7,7 @@ import BookingForm from './components/BookingForm';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import LoadingSpinner from './components/LoadingSpinner';
+import Dashboard from './components/Dashboard';
 import { Phone } from 'lucide-react';
 import { supabase } from './lib/supabaseClient';
 import { Car, SupabaseCar } from './types';
@@ -16,6 +17,18 @@ const App: React.FC = () => {
   const [cars, setCars] = useState<Car[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+  const [isAdmin, setIsAdmin] = useState(false);
+
+  useEffect(() => {
+    // Check for admin route
+    const checkHash = () => {
+      setIsAdmin(window.location.hash === '#admin');
+    };
+    
+    checkHash();
+    window.addEventListener('hashchange', checkHash);
+    return () => window.removeEventListener('hashchange', checkHash);
+  }, []);
 
   const handleCarSelection = (carId: string) => {
     setSelectedCarId(carId);
@@ -109,6 +122,11 @@ const App: React.FC = () => {
         setTimeout(() => loader.remove(), 500);
     }
   }, []);
+
+  // Render Dashboard if admin
+  if (isAdmin) {
+    return <Dashboard />;
+  }
 
   return (
     <div className="font-sans text-gray-900 bg-white">
