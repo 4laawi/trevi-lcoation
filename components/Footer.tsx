@@ -1,22 +1,25 @@
 import React from 'react';
 import { Facebook, Instagram, Phone, Mail, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
-    <footer id="contact" className="bg-gray-900 text-white pt-20 pb-10">
+    <footer id="contact" className="bg-gray-900 text-white pt-12 md:pt-20 pb-10">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12 md:mb-16">
           
           {/* Brand */}
-          <div>
-            <div className="text-2xl font-serif font-bold tracking-wider text-white mb-6">
-              TREVI <span className="text-gold-500">RENTAL</span>
-            </div>
+          <div className="text-center md:text-left">
+            <Link to="/dashboard" className="inline-block hover:opacity-80 transition-opacity">
+              <div className="text-2xl font-serif font-bold tracking-wider text-white mb-4 md:mb-6">
+                TREVI <span className="text-gold-500">RENTAL</span>
+              </div>
+            </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               Services de location de voitures modernes partout au Maroc. 
               Fiable, abordable et confortable. Votre voyage commence avec nous.
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center md:justify-start">
               <a 
                 href="https://www.instagram.com/trevi_rent_car/" 
                 target="_blank" 
@@ -39,8 +42,8 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h4 className="text-lg font-bold mb-6 text-gold-500">Liens Rapides</h4>
+          <div className="text-center md:text-left">
+            <h4 className="text-lg font-bold mb-4 md:mb-6 text-gold-500">Liens Rapides</h4>
             <ul className="space-y-3 text-sm text-gray-400">
               <li><a href="#home" className="hover:text-white transition-colors">Accueil</a></li>
               <li><a href="#fleet" className="hover:text-white transition-colors">Notre Flotte</a></li>
@@ -50,22 +53,22 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Contact */}
-          <div>
-            <h4 className="text-lg font-bold mb-6 text-gold-500">Contactez-nous</h4>
+          <div className="text-center md:text-left">
+            <h4 className="text-lg font-bold mb-4 md:mb-6 text-gold-500">Contactez-nous</h4>
             <ul className="space-y-4 text-sm text-gray-400">
-              <li className="flex items-start gap-3">
+              <li className="flex items-start gap-3 justify-center md:justify-start">
                 <MapPin size={18} className="text-gold-500 mt-1 shrink-0" />
                 <span>123 Boulevard Mohammed V,<br/>Casablanca, Maroc</span>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex items-center gap-3 justify-center md:justify-start">
                 <Phone size={18} className="text-gold-500 shrink-0" />
                 <span>+212 6 16 92 55 72</span>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex items-center gap-3 justify-center md:justify-start">
                 <Phone size={18} className="text-gold-500 shrink-0" />
                 <span>+212 5 22 53 20 62</span>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex items-center gap-3 justify-center md:justify-start">
                 <Mail size={18} className="text-gold-500 shrink-0" />
                 <span>contact@trevicars.ma</span>
               </li>
@@ -73,8 +76,8 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Newsletter (Visual Only) */}
-          <div>
-            <h4 className="text-lg font-bold mb-6 text-gold-500">Newsletter</h4>
+          <div className="text-center md:text-left">
+            <h4 className="text-lg font-bold mb-4 md:mb-6 text-gold-500">Newsletter</h4>
             <p className="text-gray-400 text-sm mb-4">Abonnez-vous pour nos offres et mises à jour.</p>
             <div className="flex">
               <input 
